@@ -31,7 +31,7 @@
    Modo interativo (menu):   python codigo_fonte.py
    Modo demonstração:        python codigo_fonte.py --demo
        (executa todas as funcionalidades em sequência, sem digitar nada,
-        e salva os gráficos na pasta graficos_ou_imagens/)
+        e salva os gráficos na pasta graficos_simulado/)
 
  DEPENDÊNCIAS: numpy, pandas, matplotlib, seaborn, scikit-learn
 ===============================================================================
@@ -66,7 +66,7 @@ except Exception:  # pragma: no cover - ambientes antigos
 # -----------------------------------------------------------------------------
 PASTA = os.path.dirname(os.path.abspath(__file__))
 ARQUIVO_DADOS = os.path.join(PASTA, "dados_aurora_siger.csv")
-PASTA_GRAFICOS = os.path.join(PASTA, "graficos_ou_imagens")
+PASTA_GRAFICOS = os.path.join(PASTA, "graficos_simulado")
 
 # Limite operacional definido pela equipe de missão: acima disso o enlace
 # compromete teleoperação e videochamadas com a Terra.
@@ -1087,7 +1087,7 @@ def dispositivos_bases_eletricidade(df):
     print("  * Terminal de teclado do operador (cadastro manual de ocorrências)")
     print("\n--- Dispositivos de SAÍDA (exibem os resultados) ---")
     print("  * Terminal de texto da sala de controle (este menu)")
-    print("  * Gráficos salvos em graficos_ou_imagens/ para o painel da missão")
+    print("  * Gráficos salvos em graficos_simulado/ para o painel da missão")
     print("  * Relatório técnico (relatorio_tecnico.md) para a equipe de decisão")
     print("\n--- Interfaces de comunicação (nível conceitual) ---")
     print("  * Rede interna da colônia (Ethernet/Wi-Fi) ligando módulos a antena")
@@ -1508,7 +1508,7 @@ def executar_demonstracao():
 
     cabecalho("DEMONSTRAÇÃO CONCLUÍDA")
     print("Todas as funcionalidades do SCIC foram executadas com sucesso.")
-    print("Gráficos disponíveis na pasta graficos_ou_imagens/.\n")
+    print("Gráficos disponíveis na pasta graficos_simulado/.\n")
 
 
 def main():

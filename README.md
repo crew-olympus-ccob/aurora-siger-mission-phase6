@@ -38,7 +38,7 @@ python codigo_fonte.py          # menu interativo
 python codigo_fonte.py --demo   # executa tudo em sequência, sem digitar nada
 ```
 
-O modo `--demo` percorre as onze opções na ordem, gera os cinco gráficos em `graficos_ou_imagens/` e exporta o `resumo_analise.json`. É o modo usado na gravação do vídeo.
+O modo `--demo` percorre as onze opções na ordem, gera os cinco gráficos em `graficos_simulado/` e exporta o `resumo_analise.json`. É o modo usado na gravação do vídeo.
 
 **Dependências:** NumPy, Pandas, Matplotlib, Seaborn e scikit-learn, todas trabalhadas na fase. Os módulos `os`, `sys`, `math`, `json` e `unicodedata` são da biblioteca padrão e não precisam ser instalados (`unicodedata` faz a busca sem acento da trie). Python 3.9 ou superior.
 
@@ -78,7 +78,7 @@ O primeiro dígito hexadecimal do sensor identifica a família do módulo: 1 hab
 | `relatorio_tecnico.md` | Relatório técnico completo, com as 5 figuras incorporadas |
 | `README.md` | Este arquivo |
 | `link_video.txt` | Link do vídeo de apresentação no YouTube (não listado) |
-| `graficos_ou_imagens/` | Gráficos gerados pelo sistema durante a execução |
+| `graficos_simulado/` | Gráficos gerados pelo sistema durante a execução |
 
 ---
 
